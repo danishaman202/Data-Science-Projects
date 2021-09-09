@@ -1,0 +1,3 @@
+Takes sample data from online and prepares a Profit Prediction Model
+Enter your R&D expenditures and other expenditures
+This will provide you with accurate profit prediction according to your investments
