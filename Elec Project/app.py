@@ -27,10 +27,10 @@ def predict():
     
     if prediction == -1:
         if ((int(int_features[3])) > 220 and (int(int_features[4])) > 220 and (int(int_features[5])) > 220):
-            ret = {"input":"Abnormal", "Issue":"Surges", "Location":int_features[7]}
+            ret = "input is AbnormalThe issue causing this abnormality are surges and are at Location",int_features[7]
             return render_template('index.html', prediction_text=ret)
         else:
-            ret = {"input":"Abnormal", "Issue":"Sags", "Location":int_features[7]}
+            ret = "input is AbnormalThe issue causing this abnormality are sags and are at Location",int_features[7]
             return render_template('index.html', prediction_text=ret)
     else:
         return render_template('index.html', prediction_text="Normal Values")
